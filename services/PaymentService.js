@@ -6,7 +6,7 @@ class PaymentService {
       prod: {},
       test: {
         access_token:
-          "TEST-8085057187059875-100819-132b4a0a3556a9206ef3fd72c2c8a0bf-73186634"
+          "APP_USR-8085057187059875-100819-7881c9fb7c443289aab4a713c3362f13-73186634"
       }
     };
     this.mercadoPagoUrl = "https://api.mercadopago.com/checkout";
