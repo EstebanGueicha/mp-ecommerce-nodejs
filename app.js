@@ -14,8 +14,8 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
-app.get("/detalle", (req, res) => {
-  res.render("detalle", req.query);
+app.get("/detail", (req, res) => {
+  res.render("detail", req.query);
 });
 
 app.get("/exitoso", (req, res) => {
