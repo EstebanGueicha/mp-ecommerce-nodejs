@@ -20,7 +20,7 @@ class PaymentService {
         id: "1234",
         title: name,
         description: "Dispositivo móvil de Tienda e-commerce",
-        picture_url: `${url + img}`,
+        picture_url: `https://images.samsung.com/is/image/samsung/p5/ar/smartphones/galaxy-s9/images/gallery/galaxy-s9_gallery-color_normal-c1-01.jpg?$ORIGIN_JPG$`,
         category_id: "1234",
         quantity: 1,
         currency_id: "ARS",
