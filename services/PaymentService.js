@@ -22,7 +22,7 @@ class PaymentService {
         description: "Dispositivo movil de Tienda e-commerce",
         picture_url: img,
         category_id: "1234",
-        quantity:1,
+        quantity: 1,
         currency_id: "ARS",
         unit_price: parseFloat(price)
       }
@@ -56,11 +56,11 @@ class PaymentService {
         default_installments: 6
       },
       back_urls: {
-        success: "https://estebangue-mp-commerce-nodejs.herokuapp.com/success",
-        pending: "https://estebangue-mp-commerce-nodejs.herokuapp.com/pending",
+        success: "https://estebangue-mp-commerce-nodejs.herokuapp.com/exitoso",
+        pending: "https://estebangue-mp-commerce-nodejs.herokuapp.com/pendiente",
         failure: "https://estebangue-mp-commerce-nodejs.herokuapp.com/error"
       },
-      notification_url: "https://estebangue-mp-commerce-nodejs.herokuapp.com/webhook",
+      notification_url: "https://estebangue-mp-commerce-nodejs.herokuapp.com/webhookMercadoPago",
       auto_return: "approved"
     };
 

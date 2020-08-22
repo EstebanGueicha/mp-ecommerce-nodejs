@@ -14,27 +14,27 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
-app.get("/detail", (req, res) => {
-  res.render("detail", req.query);
+app.get("/detalle", (req, res) => {
+  res.render("detalle", req.query);
 });
 
-app.get("/success", (req, res) => {
-  res.render("success", req.query);
+app.get("/exitoso", (req, res) => {
+  res.render("exitoso", req.query);
 });
 
 app.get("/error", (req, res) => {
   res.render("error");
 });
 
-app.get("/pending", (req, res) => {
-  res.render("pending");
+app.get("/pendiente", (req, res) => {
+  res.render("pendiente");
 });
 
-app.post("/payment/new", (req, res) =>
+app.post("/pagar", (req, res) =>
   PaymentInstance.getMercadoPagoLink(req, res)
 );
 
-app.post("/webhook", (req, res) => PaymentInstance.webhook(req, res));
+app.post("/webhookMercadoPago", (req, res) => PaymentInstance.webhook(req, res));
 
 app.use(express.static("assets"));
 
