@@ -1,5 +1,5 @@
 const axios = require("axios");
-
+const url="https://estebangue-mp-commerce-nodejs.herokuapp.com/"
 class PaymentService {
   constructor() {
     this.tokensMercadoPago = {
@@ -19,8 +19,8 @@ class PaymentService {
       {
         id: "1234",
         title: name,
-        description: "Dispositivo movil de Tienda e-commerce",
-        picture_url: img,
+        description: "Dispositivo móvil de Tienda e-commerce",
+        picture_url: `${url}/${img}`,
         category_id: "1234",
         quantity: 1,
         currency_id: "ARS",
@@ -30,7 +30,7 @@ class PaymentService {
 
     const preferences = {
       items,
-      external_reference: "estebanquito_181@hotmail.com",
+      external_reference: "esteban.gueicha@gmail.com",
       payer: {
         name: "Lalo",
         surname: "Landa",
